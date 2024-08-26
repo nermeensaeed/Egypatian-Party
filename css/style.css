@@ -1,0 +1,507 @@
+#Home {
+    width: 100%;
+    height: 660px;
+    background-image: url(../image/events-heavenly-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    color: white;
+    position: relative;
+}
+
+.HomeOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(214, 46, 51, 0.6);
+}
+
+#leftMenu {
+    height: 100%;
+    width:200px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left:-200px;
+    background-color: #111;
+    transition: 1s;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 20px 8px 20px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    color: white;
+}
+.openNav{
+    position: absolute;
+    top: 0;
+    right: -80px;
+    transition: 1s;
+}
+#leftMenu.open{
+    left:0;
+}
+.openNav.close{
+    left:200px;
+}
+
+
+
+#Home h2 {
+    margin-top: 200px;
+
+}
+
+
+
+
+#Home h2,
+p {
+    text-align: center;
+
+}
+
+
+
+
+.sidenav {
+    background-color: #414658;
+}
+
+
+
+
+.sidenav a:hover {
+    color: rgba(214, 46, 51, 0.4);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#home-content {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+#home-content h2 {
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+
+
+/*seconed section*/
+
+#sliderDown {
+    margin: 100px auto;
+    width: 50%;
+
+}
+
+#sliderDown h3 {
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(214, 46, 51, 0.6);
+    cursor: pointer;
+    color: white;
+}
+
+
+#sliderDown div {
+    padding: 10px;
+    background-color: #ccc;
+    display: none;
+}
+
+
+
+#sliderDown .first {
+    display: block;
+}
+
+/*third section*/
+
+#count {
+
+    background-image: url(../image/invitation-2508607__340.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    position: relative;
+    height: 330px;
+
+
+}
+
+
+.count-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(214, 46, 51, 0.6);
+    color: white;
+}
+
+.container {
+    padding: 100px 0px;
+}
+
+.tim {
+
+    padding: 50px;
+    border: 1px solid #FFF;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+
+/*section four*/
+#contact-us {
+    margin-top: 100px;
+}
+
+#contact-us .head h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #444;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#contact-us .head p {
+    color: #777;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+#contact-us .con-info h3 {
+    color: #444;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#contact-us .con-info p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #777;
+}
+
+#contact-us .icons {
+    margin-top: 50px;
+}
+
+#contact-us .icons p {
+    margin-bottom: 35px;
+}
+
+#contact-us i {
+    margin-right: 20px;
+    color: #777;
+}
+
+#contact-us .red {
+    color: #D62E33 !important;
+}
+
+
+#contact-us .con-info .social-list {
+    margin-top: 60px;
+    color: #777;
+
+}
+
+#contact-us .con-info .social-list i {
+    margin-right: 10px;
+    border: 1px solid #999;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#contact-us .con-info .social-list i:hover {
+    color: #fff;
+    background-color: #D62E33;
+    border: 1px solid #D62E33;
+}
+
+#contact-us form input,
+#contact-us form textarea {
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+
+#contact-us form textarea {
+    height: 200px;
+    resize: vertical;
+}
+
+#contact-us form button {
+    background-color: #D62E33;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 0;
+    text-transform: uppercase
+}
+
+#chars {
+    font-size: 20px;
+    color: #D62E33;
+}
+
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 40px;
+    height: 60px;
+    animation: heartBeat 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    background: #D62E33;
+    width: 40px;
+    height: 60px;
+    border-radius: 50px 50px 0 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: rotate(45deg);
+    transform-origin: 50% 68%;
+    box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.144) inset;
+}
+
+.loader:after {
+    transform: rotate(-45deg);
+}
+
+@keyframes heartBeat {
+    0% {
+        transform: scale(0.95)
+    }
+
+    5% {
+        transform: scale(1.1)
+    }
+
+    39% {
+        transform: scale(0.85)
+    }
+
+    45% {
+        transform: scale(1)
+    }
+
+    60% {
+        transform: scale(0.95)
+    }
+
+    100% {
+        transform: scale(0.9)
+    }
+}
+
+
+body{
+    overflow: hidden;
+}
+.loading {
+    position: absolute;
+    inset: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+
+#btn {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+#btn span {
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    top: 50%;
+    left: 50%;
+    background: #000;
+    border-radius: 2px;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+
+#btn span::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #000;
+    transition: all 0.3s linear;
+}
+
+#btn span:nth-child(1) {
+    animation: span-first-off 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#btn span:nth-child(2) {
+    animation: span-second-off 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#btn span:nth-child(3) {
+    animation: span-third-off 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#btn.on:hover span::before {
+    width: 100%;
+    transition: all 0.3s linear;
+}
+
+#btn.on span:nth-child(1) {
+    animation: span-first-on 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#btn.on span:nth-child(2) {
+    animation: span-second-on 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#btn.on span:nth-child(3) {
+    animation: span-third-on 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes span-first-on {
+    0% {
+        transform: translate(-50%, -300%);
+    }
+
+    30% {
+        transform: translate(-50%, -50%);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+}
+
+@keyframes span-first-off {
+    0% {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    30% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -300%);
+    }
+}
+
+@keyframes span-second-on {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+
+    25% {
+        background: gray;
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    100% {
+        transform: translate(-150%, -50%) scale(0);
+    }
+}
+
+@keyframes span-second-off {
+    0% {
+        transform: translate(-150%, -50%) scale(0);
+    }
+
+    25% {
+        background: gray;
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes span-third-on {
+    0% {
+        transform: translate(-50%, 200%);
+    }
+
+    30% {
+        transform: translate(-50%, -50%);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+}
+
+@keyframes span-third-off {
+    0% {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    30% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, 200%);
+    }
+}
